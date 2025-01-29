@@ -25,19 +25,19 @@ class MainPage extends StatelessWidget {
 final List<Map<String, String>> daftarBeras = [
     {
       'jenis': 'Beras Putih',
-      'gambar': 'beras/berasPutih.jpeg',
+      'gambar': 'assets/beras/berasPutih.jpeg',
     },
     {
       'jenis': 'Beras Merah',
-      'gambar': 'beras/berasMerah.jpeg',
+      'gambar': 'assets/beras/berasMerah.jpeg',
     },
     {
       'jenis': 'Beras Hitam',
-      'gambar': 'beras/berasHitam.jpeg',
+      'gambar': 'assets/beras/berasHitam.jpeg',
     },
     {
       'jenis': 'Beras Basmati',
-      'gambar': 'beras/berasBasmati.jpeg',
+      'gambar': 'assets/beras/berasBasmati.jpeg',
     }
   ];
 
