@@ -1,3 +1,3 @@
 # mini_project_EasyRice
 
-A new Flutter project.
+Aplikasi mobile untuk menghitung takaran beras saat memasak nasi
