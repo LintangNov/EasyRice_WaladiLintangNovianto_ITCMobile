@@ -1,3 +1,3 @@
-# mini_project_warmindo
+# mini_project_EasyRice
 
 A new Flutter project.

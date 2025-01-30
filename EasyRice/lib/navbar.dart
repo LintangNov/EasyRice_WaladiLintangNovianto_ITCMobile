@@ -22,10 +22,10 @@ AppBar navbar() {
         ),
       ],
     ),
-    backgroundColor: Colors.green[700], // Warna latar belakang AppBar
-    elevation: 5, // Efek bayangan AppBar
-    toolbarHeight: 80, // Tinggi AppBar
-    automaticallyImplyLeading: false, // Hilangkan tombol back
+    backgroundColor: Colors.green[700], 
+    elevation: 5, 
+    toolbarHeight: 80, 
+    automaticallyImplyLeading: false, 
   );
 }
 

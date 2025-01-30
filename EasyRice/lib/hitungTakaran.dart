@@ -1,34 +1,44 @@
 abstract class takaran {
-  double hitungNasi();
-  double hitungAir();
+  final double berasPerPorsi = 100;
+
+  double rasioBerasAir();
+   
+   Map<String, double> hitungTakaran({double? gramBeras, int? sajianNasi}) {
+
+    double mlAir = 0;
+    double outputBeras = 0;
+    double rasio = rasioBerasAir();
+
+    if (sajianNasi != null) {
+      outputBeras = sajianNasi * berasPerPorsi;
+      mlAir = outputBeras * rasio;
+    } else if (gramBeras != null) {
+      mlAir = gramBeras * rasio;
+    }
+
+    return {
+      "beras": outputBeras,
+      "air": mlAir,
+    };
+   }
 }
 
-class berdasarkanPorsi extends takaran {
-  double porsi;
-  berdasarkanPorsi(this.porsi);
-
+class berasPutih extends takaran{
   @override
-  double hitungNasi() {
-    return porsi * 0.5;
-  }
-
-  @override
-  double hitungAir() {
-    return porsi * 0.5;
-  }
+  double rasioBerasAir() => 1.5;
 }
 
-class berdasarkanBeras extends takaran {
-  double beras;
-  berdasarkanBeras(this.beras);
-
+class berasMerah extends takaran{
   @override
-  double hitungNasi() {
-    return beras;
-  }
+  double rasioBerasAir() => 2.0;
+}
 
+class berasHitam extends takaran{
   @override
-  double hitungAir() {
-    return beras * 2;
-  }
+  double rasioBerasAir() => 2.5;
+}
+
+class berasBasmati extends takaran{
+  @override
+  double rasioBerasAir() => 1.75;
 }
