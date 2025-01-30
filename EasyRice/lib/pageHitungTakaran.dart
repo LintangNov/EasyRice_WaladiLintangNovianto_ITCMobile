@@ -30,11 +30,16 @@ class _PagehitungtakaranState extends State<Pagehitungtakaran> {
       takaranBeras = berasHitam();
     } else if (jenisBeras == 'Beras Basmati') {
       takaranBeras = berasBasmati();
-    } 
+    } else if (jenisBeras == 'Beras Coklat') {
+      takaranBeras = berasCoklat();
+    } else if (jenisBeras == 'Beras Ketan') {
+      takaranBeras = berasKetan();
+    }
     
 
     if (beratBeras.isNotEmpty) {
       hasil = takaranBeras!.hitungTakaran(gramBeras: double.parse(beratBeras));
+      hasil['beras'] = double.parse(beratBeras);
     } else if (porsiNasi.isNotEmpty) {
       hasil = takaranBeras!.hitungTakaran(sajianNasi: int.parse(porsiNasi));
     }
@@ -49,6 +54,7 @@ class _PagehitungtakaranState extends State<Pagehitungtakaran> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const SizedBox(height: 30),
               Text(
                 'Hitung Takaran Beras dan Air untuk ${widget.beras['jenis']} ',
                 style: TextStyle(
@@ -73,18 +79,28 @@ class _PagehitungtakaranState extends State<Pagehitungtakaran> {
               const SizedBox(height: 20),
               Text('* Harap isi salah satu dari dua input di atas'),
               const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  hitung();
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => Hasil(hasil: hasil),
+              Center(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    
+                    backgroundColor: Colors.green[700],
+                  ),
+                  onPressed: () {
+                    hitung();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Hasil(hasil: hasil, beras:widget.beras),
+                      ),
+                    );
+                
+                  },
+                  child: const Text('Hitung',
+                    style: TextStyle(
+                      color: Colors.white,
                     ),
-                  );
-
-                },
-                child: const Text('Hitung'),
+                  ),
+                ),
               ),
             ],
           ),

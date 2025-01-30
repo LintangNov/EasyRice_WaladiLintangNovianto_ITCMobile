@@ -42,3 +42,13 @@ class berasBasmati extends takaran{
   @override
   double rasioBerasAir() => 1.75;
 }
+
+class berasCoklat extends takaran{
+  @override
+  double rasioBerasAir() => 2.25;
+}
+
+class berasKetan extends takaran{
+  @override
+  double rasioBerasAir() => 1.25;
+}
