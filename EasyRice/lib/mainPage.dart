@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mini_project_warmindo/pageHitungTakaran.dart';
+import 'package:mini_project_warmindo/inputDataPage.dart';
 import 'navbar.dart';
 
 void main() {

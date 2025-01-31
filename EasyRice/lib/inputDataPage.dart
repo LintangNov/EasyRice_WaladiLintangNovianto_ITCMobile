@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mini_project_warmindo/hitungTakaran.dart';
+import 'package:mini_project_warmindo/classHitungTakaran.dart';
 import 'navbar.dart';
-import 'PageTampilkanHasil.dart';
+import 'tampilkanHasilPage.dart';
 
 class Pagehitungtakaran extends StatefulWidget {
   final Map<String, String> beras;
