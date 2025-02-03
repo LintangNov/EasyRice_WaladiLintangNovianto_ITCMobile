@@ -29,16 +29,16 @@ class Hasil extends StatelessWidget {
                   Text(
                     'Takaran beras dan air:',
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.green[700],
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   Text(
                     'Beras: ${hasil['beras']} gram',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       color: Colors.black87,
                     ),
                   ),
@@ -46,22 +46,22 @@ class Hasil extends StatelessWidget {
                   Text(
                     'Air: ${hasil['air']} ml',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       color: Colors.black87,
                     ),
                   ),
                   SizedBox(height: 20),
                   Text('Panduan memasak:',
                   style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.green[700],
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(height: 15,),
                   Text('${beras['panduan']}',
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       color: Colors.black87,
                     ),
                   ),

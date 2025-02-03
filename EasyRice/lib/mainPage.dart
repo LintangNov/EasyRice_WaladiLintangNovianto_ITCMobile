@@ -34,7 +34,7 @@ class MainPage extends StatelessWidget {
       'gambar': 'assets/beras/berasMerah.jpeg',
       'deskripsi':
           'Mengandung lebih banyak nutrisi dan mineral dibandingkan beras putih. Cocok untuk orang yang sedang diet atau penderita diabetes.',
-      'panduan': ' 1. Cuci beras 1-2 kali\n 2. Rendam beras selama 30 menit agar lebih empuk\n 3. Tambahkan air sesuai takaran\n 4. Masukkan ke dalam rice cooker/panci\n 5. masak selama 20-45 menit hingga matang.'
+      'panduan': ' 1. Cuci beras 1-2 kali\n 2. Rendam beras selama 30 menit agar lebih empuk\n 3. Tambahkan air sesuai takaran\n 4. Masukkan ke dalam rice cooker/panci\n 5. masak selama 20-45 menit hingga matang'
     },
     {
       'jenis': 'Beras Hitam',
@@ -47,19 +47,22 @@ class MainPage extends StatelessWidget {
       'jenis': 'Beras Basmati',
       'gambar': 'assets/beras/berasBasmati.jpeg',
       'deskripsi':
-          'Beras yang berasal dari India dan Pakistan ini memiliki bentuk bulir panjang dan ramping. '
+          'Beras yang berasal dari India dan Pakistan ini memiliki bentuk bulir panjang dan ramping. ',
+      'panduan': ' 1. Cuci beras hingga air bening\n 2. Rendam selama 20-30 menit agar butiran lebih panjang\n 3. Tambahkan air sesuai takaran\n 4. Masukkan ke dalam panci atau rice cooker\n 5. Masak selama 25-40 menit hingga matang'
     },
     {
       'jenis': 'Beras Coklat',
       'gambar': 'assets/beras/berasCoklat.jpg',
       'deskripsi':
-          'Sekilas beras ini mirip dengan beras merah, namun memiliki warna lebih pucat. Cocok dikonsumsi penderita diabetes.'
+          'Sekilas beras ini mirip dengan beras merah, namun memiliki warna lebih pucat. Cocok dikonsumsi penderita diabetes.',
+      'panduan': ' 1. Cuci beras 1-2 kali\n 2. Rendam selama 30 menit agar lebih lunak\n 3. Tambahkan air sesuai takaran\n 4. Masukkan ke dalam panci atau rice cooker\n 5. Masak selama 30-45 menit hingga matang'
     },
     {
       'jenis': 'Beras Ketan',
       'gambar': 'assets/beras/berasKetan.jpg',
       'deskripsi':
-          'Jenis beras bulir pendek yang menjadi lengket saat dimasak, biasanya berwarna lebih putih dari beras biasa.'
+          'Jenis beras bulir pendek yang menjadi lengket saat dimasak, biasanya berwarna lebih putih dari beras biasa.',
+      'panduan': ' 1. Cuci beras 2-3 kali\n 2. Rendam beras selama 4-6 jam agar lebih lembut\n 3. Tambahkan air sesuai takaran\n 4. Tambahkan santan (opsional)\n 5. Kukus dengan dandang atau masak di rice cooker selama 30-40 menit\n 6. Jika dikukus, aduk sesekali agar nasi matang merata'
     }
   ];
 
