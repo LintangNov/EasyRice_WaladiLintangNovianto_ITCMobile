@@ -25,19 +25,23 @@ class MainPage extends StatelessWidget {
     {
       'jenis': 'Beras Putih',
       'gambar': 'assets/beras/berasPutih.jpeg',
-      'deskripsi': 'Beras yang paling umum dan sering dikonsumsi di dunia.'
+      'deskripsi': 'Beras yang paling umum dan sering dikonsumsi di dunia.',
+      'panduan':
+          " 1. Cuci beras 2-3 kali sampai air jernih\n 2. Tambahkan air sesuai takaran diatas\n 3. masukkan ke dalam rice cooker/panci \n 4. Masak selama 20-30 menit"
     },
     {
       'jenis': 'Beras Merah',
       'gambar': 'assets/beras/berasMerah.jpeg',
       'deskripsi':
-          'Mengandung lebih banyak nutrisi dan mineral dibandingkan beras putih. Cocok untuk orang yang sedang diet atau penderita diabetes.'
+          'Mengandung lebih banyak nutrisi dan mineral dibandingkan beras putih. Cocok untuk orang yang sedang diet atau penderita diabetes.',
+      'panduan': ' 1. Cuci beras 1-2 kali\n 2. Rendam beras selama 30 menit agar lebih empuk\n 3. Tambahkan air sesuai takaran\n 4. Masukkan ke dalam rice cooker/panci\n 5. masak selama 20-45 menit hingga matang.'
     },
     {
       'jenis': 'Beras Hitam',
       'gambar': 'assets/beras/berasHitam.jpeg',
       'deskripsi':
-          'Memiliki warna hitam pekat atau ungu, yang berasal dari antosianin, sebuah senyawa antioksidan. '
+          'Memiliki warna hitam pekat atau ungu, yang berasal dari antosianin, sebuah senyawa antioksidan. ',
+      'panduan': ' 1. Cuci beras 1-2 kali\n 2. Rendam selama 1-2 jam agar tekstur lembut\n 3. Tambahkan air sesuai takaran\n 4. Masukkan ke dalam rice cooker atau panci\n 5. Masak selama 30-40 menit hingga matang\n 6. Diamkan selama 10 menit sebelum dihidangkan'
     },
     {
       'jenis': 'Beras Basmati',

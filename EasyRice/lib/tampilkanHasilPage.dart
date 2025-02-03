@@ -27,7 +27,7 @@ class Hasil extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Hasil Perhitungan:',
+                    'Takaran beras dan air:',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -50,8 +50,22 @@ class Hasil extends StatelessWidget {
                       color: Colors.black87,
                     ),
                   ),
+                  SizedBox(height: 20),
+                  Text('Panduan memasak:',
+                  style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green[700],
+                    ),
+                  ),
+                  SizedBox(height: 20,),
+                  Text('${beras['panduan']}',
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.black87,
+                    ),
+                  ),
                   SizedBox(height: 30),
-
                   Center(
                     child: ElevatedButton(
                       onPressed: () {
