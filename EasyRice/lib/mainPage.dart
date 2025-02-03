@@ -30,27 +30,32 @@ class MainPage extends StatelessWidget {
     {
       'jenis': 'Beras Merah',
       'gambar': 'assets/beras/berasMerah.jpeg',
-      'deskripsi': 'Mengandung lebih banyak nutrisi dan mineral dibandingkan beras putih. Cocok untuk orang yang sedang diet atau penderita diabetes.'
+      'deskripsi':
+          'Mengandung lebih banyak nutrisi dan mineral dibandingkan beras putih. Cocok untuk orang yang sedang diet atau penderita diabetes.'
     },
     {
       'jenis': 'Beras Hitam',
       'gambar': 'assets/beras/berasHitam.jpeg',
-      'deskripsi': 'Memiliki warna hitam pekat atau ungu, yang berasal dari antosianin, sebuah senyawa antioksidan. '
+      'deskripsi':
+          'Memiliki warna hitam pekat atau ungu, yang berasal dari antosianin, sebuah senyawa antioksidan. '
     },
     {
       'jenis': 'Beras Basmati',
       'gambar': 'assets/beras/berasBasmati.jpeg',
-      'deskripsi': 'Beras yang berasal dari India dan Pakistan ini memiliki bentuk bulir panjang dan ramping. '
+      'deskripsi':
+          'Beras yang berasal dari India dan Pakistan ini memiliki bentuk bulir panjang dan ramping. '
     },
     {
       'jenis': 'Beras Coklat',
       'gambar': 'assets/beras/berasCoklat.jpg',
-      'deskripsi': 'Sekilas beras ini mirip dengan beras merah, namun memiliki warna lebih pucat. Cocok dikonsumsi penderita diabetes.'
+      'deskripsi':
+          'Sekilas beras ini mirip dengan beras merah, namun memiliki warna lebih pucat. Cocok dikonsumsi penderita diabetes.'
     },
     {
       'jenis': 'Beras Ketan',
       'gambar': 'assets/beras/berasKetan.jpg',
-      'deskripsi': 'Jenis beras bulir pendek yang menjadi lengket saat dimasak, biasanya berwarna lebih putih dari beras biasa.'
+      'deskripsi':
+          'Jenis beras bulir pendek yang menjadi lengket saat dimasak, biasanya berwarna lebih putih dari beras biasa.'
     }
   ];
 
@@ -71,6 +76,7 @@ class MainPage extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
+                        fontFamily: 'Roboto',
                       )),
                 ),
                 Container(
@@ -96,20 +102,24 @@ class MainPage extends StatelessWidget {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset(
-                                width: 110,
-                                height: 110,
-                                beras['gambar']!,
-                                fit: BoxFit.cover,
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(12),
+                                child: Image.asset(
+                                  width: 115,
+                                  height: 115,
+                                  beras['gambar']!,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                               SizedBox(width: 5),
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(6.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.only(top: 5, bottom: 5, left:7),
+                                      padding: const EdgeInsets.only(
+                                          top: 5, bottom: 3, left: 7),
                                       child: Text(
                                         beras['jenis']!,
                                         style: TextStyle(
@@ -119,7 +129,11 @@ class MainPage extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      padding: const EdgeInsets.only(top: 7, bottom: 7, left: 7,),
+                                      padding: const EdgeInsets.only(
+                                        top: 7,
+                                        bottom: 7,
+                                        left: 7,
+                                      ),
                                       width: 330,
                                       child: Text(
                                         beras['deskripsi']!,
