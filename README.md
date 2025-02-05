@@ -11,6 +11,6 @@ Fitur-fiturnya antara lain:
 Elemen yang digunakan:
  - Menggunakan list yang berisi map untuk menyimpan nama beras, sumber gambar, deskripsi, dan panduan memasak.
  - Menggunakan class-class jenis beras yang extends ke abstract class takaran untuk menyimpan rasio beras dan air.
- - Menggunakan textfield untuk meminta input berat beras atau porsi nasi
- - Menggunakan listview.builder untuk menampilkan data dari list beras dalam bentuk card
- - Menggunakan constructor saat menavigasikan untuk membawa data map beras ke halaman lain berdasarkan jenis beras yang dipilih 
+ - Menggunakan textformfield untuk meminta input berat beras atau porsi nasi dan memvalidasi apakah input benar.
+ - Menggunakan listview.builder untuk menampilkan data dari list beras dalam bentuk card.
+ - Menggunakan constructor saat menavigasikan untuk membawa data map beras dan hasil perhitungan ke halaman lain berdasarkan jenis beras yang dipilih. 
